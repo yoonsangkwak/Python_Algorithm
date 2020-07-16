@@ -3,14 +3,16 @@ import requests
 
 os.system('cls')
 
-print("Welcome to IsItDown.py!")
 while True:
+  print("Welcome to IsItDown.py!")
   print("Please write a URL or URLs you want to check. (seqarated by comma)")
 
 
   pages = input("")
+  # for page in pages.split(','):
+  #   page = page.strip()
   for page in [page.strip() for page in pages.split(',')]:
-    print(page)
+    page = page.lower()
     normal = "http://"
     goodpage = normal + page
 
@@ -33,6 +35,7 @@ while True:
     if choice == "y":
       break
     elif choice == "n":
+      print("Ok. bye!")
       exit()
     else:
       print("That's not a valid answer.")
