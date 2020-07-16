@@ -1,6 +1,5 @@
-def funcA(a=10):
-    print('a='+str(a))
+import requests
 
-print(funcA())
-print(funcA(20))
-print(funcA(30))
+resp = requests.get('http://naver.com')
+print(resp.status_code)
+print(type(resp.status_code))

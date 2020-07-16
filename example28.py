@@ -1,3 +1,3 @@
 # strip
 print("     abc     def           ".strip())
-print("          \t       \n    abc   def\n\n\n".strip())
+print("\n    abc\n\ndef\n\n\n".strip('\n'))
