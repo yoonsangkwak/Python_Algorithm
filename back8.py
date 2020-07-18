@@ -1,13 +1,16 @@
 a = input("")
 num_a = int(a)
 
-pocket = []
-
-i = 0
-j = 1
-while j <= num_a:
+for num in range(num_a):
     mars = input("").split(" ")
-    pocket.append(mars[i])
-    i += 1
-    j += 1
-print(pocket)
+    answer = float(mars[0])
+    i = 1
+    while i < len(mars):
+        if mars[i] == '@':
+            answer = answer * 3
+        elif mars[i] == '%':
+            answer = answer + 5
+        elif mars[i] == '#':
+            answer = answer - 7
+        i += 1
+    print(f"{answer:.2f}")
