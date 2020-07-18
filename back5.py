@@ -1,3 +1,5 @@
+# 2525번
+
 before = input("").split(" ")
 oven = input("")
 

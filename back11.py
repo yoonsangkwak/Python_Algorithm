@@ -1,3 +1,5 @@
+# 9498번
+
 a = input("")
 score = int(a)
 

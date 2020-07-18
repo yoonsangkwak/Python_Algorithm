@@ -1,3 +1,5 @@
+# 1000번
+
 def add_AB():
     while True:
         try:

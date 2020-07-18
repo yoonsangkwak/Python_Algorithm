@@ -1,3 +1,5 @@
+# 2914번
+
 a = input("").split(" ")
 music = int(a[0])
 even = int(a[1])
