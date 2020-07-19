@@ -1,7 +1,10 @@
 # 2476번
 
 
-def func(dice):
+man = int(input())
+answer = 0
+for num in range(man):
+    dice = input("").split( )
     new_dice = sorted(dice)
     A = int(new_dice[0])
     B = int(new_dice[1])
@@ -15,6 +18,10 @@ def func(dice):
         price = 1000 + B * 100
     elif A < B < C:
         price = C * 100
-    return price
 
-man = int(input())
+    if price >= answer:
+        answer = price
+    else:
+        continue
+
+print(answer)
