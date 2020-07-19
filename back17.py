@@ -36,3 +36,4 @@ for num in range(case):
     A = int(exam[0])
     B = int(exam[1])
     print(lcm(A, B))
+    
