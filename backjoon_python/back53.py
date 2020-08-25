@@ -1,19 +1,19 @@
 # 15904번
 
 sentence = input()
-check = ["U", "C", "P", "C"]
-foo = True
+check_list = ["U", "C", "P", "C"]
+check = True
 
-for i in range(len(check)):
-    if check[i] in sentence:
-        foo = True
-        idx = sentence.find(check[i])
-        sentence = sentence[idx:]
+for i in range(len(check_list)):
+    if check_list[i] in sentence:
+        check = True
+        idx = sentence.find(check_list[i])
+        sentence = sentence[idx + 1:]
     else:
-        foo = False
+        check = False
         break
 
-if foo == True:
+if check == True:
     print("I love UCPC")
 else:
     print("I hate UCPC")
