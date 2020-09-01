@@ -15,8 +15,7 @@ def self_number():
             elif len(str(i)) == 1:
                 num = i + i
 
-            if num <= 10000:
-                num_list.append(num)
+            num_list.append(num)
         
     for k in range(len(num_list)):
         if num_list[k] in self_list:
