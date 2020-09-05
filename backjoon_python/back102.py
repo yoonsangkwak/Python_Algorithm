@@ -18,7 +18,7 @@ for _ in range(T):
     else:
         if r1 > distance + r2 or r2 > distance + r1 or distance > r1 + r2:
             print(0)
-        elif r1 == distance + r2 or r2 == distance + r1 or r1 + r2 == distance:
+        elif abs(r1 - r2) == distance or r1 + r2 == distance:
             print(1)
         else:
             print(2)
