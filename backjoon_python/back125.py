@@ -3,9 +3,9 @@
 
 import sys
 
-n, m = map(int, sys.stdin.readline().split())
-n_list = list(map(int, sys.stdin.readline().split()))
-m_list = list(map(int, sys.stdin.readline().split()))
-answer_list = n_list + m_list
+a, b = map(int, sys.stdin.readline().split())
+a_list = list(map(int, sys.stdin.readline().split()))
+b_list = list(map(int, sys.stdin.readline().split()))
+answer_list = a_list + b_list
 answer = ' '.join(map(str, sorted(answer_list)))
 print(answer)
